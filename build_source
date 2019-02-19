@@ -1,6 +1,6 @@
 #!/bin/bash
 
-: ${DOCKER_USER:-ss75710541}
+DOCKER_USER=${DOCKER_USER:-ss75710541}
 
 docker build -t ${DOCKER_USER}/admission-webhook-example:v1 -f Dockerfile.source .
 
